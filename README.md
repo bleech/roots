@@ -1,6 +1,6 @@
 # [Roots Theme](http://rootstheme.com/)
 
-Roots is a starting WordPress theme made for developers that’s based on [HTML5 Boilerplate](http://html5boilerplate.com/), and Bootstrap from Twitter.
+Roots is a starting WordPress theme made for developers that’s based on [HTML5 Boilerplate](http://html5boilerplate.com/).
 
 ## Quick start
 
@@ -10,7 +10,6 @@ Roots is a starting WordPress theme made for developers that’s based on [HTML5
 ## Features
 
 * HTML5 Boilerplate’s markup, style, and .htaccess
-* Bootstrap from Twitter
 * Clean URLs (no more `/wp-content/`)
 * All static theme assets are rewritten to the website root (`/css/`, `/img/`, and `/js/`)
 * Cleaner HTML output of navigation menus
@@ -47,7 +46,6 @@ Anyone and everyone is welcome to contribute. There are several ways you can hel
 * Modernizr: MIT/BSD license
 * jQuery: MIT/GPL license
 * Normalize.css: Public Domain
-* Bootstrap: Apache 2.0 license
 
 ### Everything else:
 

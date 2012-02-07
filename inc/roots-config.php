@@ -1,7 +1,6 @@
 <?php
 
 define('POST_EXCERPT_LENGTH',  40);
-define('BOOTSTRAP_RESPONSIVE', true);
 define('WRAP_CLASSES',         'container');
 define('CONTAINER_CLASSES',    'row');
 define('MAIN_CLASSES',         'span8');

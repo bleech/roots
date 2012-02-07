@@ -2,8 +2,8 @@
 
 function roots_scripts() {
   $template_uri = get_template_directory_uri();
-  wp_register_script('roots_plugins', ''.$template_uri.'/js/plugins.js', false, null, false);
-  wp_register_script('roots_script', ''.$template_uri.'/js/script.js', false, null, false);
+  wp_register_script('roots_plugins', ''.$template_uri.'/js/plugins.' . filemtime('wp-content/themes/' . get_template() . '/js/plugins.js') . '.js', false, null, false);
+  wp_register_script('roots_script', ''.$template_uri.'/js/script.' . filemtime('wp-content/themes/' . get_template() . '/js/script.js') . '.js', false, null, false);
   wp_enqueue_script('roots_plugins');
   wp_enqueue_script('roots_script');
 }
@@ -34,8 +34,8 @@ function roots_print_scripts() {
   echo "\t" . implode("\n\t", $scripts) . "\n";
 
   $template_uri = get_template_directory_uri();
-  echo "\t<script src=\"$template_uri/js/plugins.js\"></script>\n";
-  echo "\t<script src=\"$template_uri/js/script.js\"></script>\n";
+  echo "\t<script src=\"$template_uri/js/plugins." . filemtime('wp-content/themes/' . get_template() . '/js/plugins.js') . ".js\"></script>\n";
+  echo "\t<script src=\"$template_uri/js/script." . filemtime('wp-content/themes/' . get_template() . '/js/script.js') . ".js\"></script>\n";
 
   $wp_scripts->reset();
   return $wp_scripts->done;
