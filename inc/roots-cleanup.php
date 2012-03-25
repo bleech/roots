@@ -585,8 +585,8 @@ if (!defined('WP_POST_REVISIONS')) { define('WP_POST_REVISIONS', 5); }
 
 // allow more tags in TinyMCE including <iframe> and <script>
 function roots_change_mce_options($options) {
-  $ext = 'pre[id|name|class|style],iframe[align|longdesc|name|width|height|frameborder|scrolling|marginheight|marginwidth|src],script[charset|defer|language|src|type]';
-  if (isset($initArray['extended_valid_elements'])) {
+  $ext = 'pre[id|name|class|style],iframe[align|longdesc|name|width|height|frameborder|scrolling|marginheight|marginwidth|src]';
+  if (isset($options['extended_valid_elements'])) {
     $options['extended_valid_elements'] .= ',' . $ext;
   } else {
     $options['extended_valid_elements'] = $ext;
