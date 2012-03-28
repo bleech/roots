@@ -25,6 +25,7 @@ if (stristr($_SERVER['SERVER_SOFTWARE'], 'apache') !== false) {
     global $wp_rewrite;
     $theme_name = next(explode('/themes/', get_stylesheet_directory()));
     $roots_new_non_wp_rules = array(
+      'login'         => 'wp-login.php',
       'css/(.*)'      => 'wp-content/themes/'. $theme_name . '/css/$1',
       '(.+)\.(\d+)\.(js|css|png|jpg|gif)$' => '$1.$3',
       'js/(.*)'       => 'wp-content/themes/'. $theme_name . '/js/$1',
